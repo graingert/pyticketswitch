@@ -1,6 +1,6 @@
-import core_objects as objects
-from util import create_dict_from_xml_element
-import api_exceptions as aex
+from . import core_objects as objects
+from .util import create_dict_from_xml_element
+from . import api_exceptions as aex
 
 
 def script_error(root):

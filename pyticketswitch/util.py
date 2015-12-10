@@ -6,7 +6,7 @@ import random
 import string
 import datetime
 
-import settings
+from . import settings
 
 __all__ = (
     'create_xml_from_dict', 'create_dict_from_xml',

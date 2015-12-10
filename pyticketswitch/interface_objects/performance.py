@@ -1,14 +1,14 @@
 from operator import attrgetter
 import datetime
 
-from base import InterfaceObject, CostRangeMixin
-from pyticketswitch.util import (
+from .base import InterfaceObject, CostRangeMixin
+from ..util import (
     yyyymmdd_to_date, hhmmss_to_time,
     date_to_yyyymmdd_or_none, time_to_hhmmss,
     date_to_yyyymmdd, resolve_boolean, to_int_or_none
 )
-import event as event_objs
-import availability
+from . import event as event_objs
+from . import availability
 
 
 class Performance(InterfaceObject, CostRangeMixin):

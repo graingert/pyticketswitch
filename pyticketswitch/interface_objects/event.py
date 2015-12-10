@@ -2,16 +2,16 @@ from operator import itemgetter, attrgetter
 import datetime
 from copy import deepcopy
 
-from pyticketswitch.util import (
+from ..util import (
     resolve_boolean, to_int_or_none, yyyymmdd_to_date,
     dates_in_range, hhmmss_to_time, date_to_yyyymmdd_or_none
 )
-from base import InterfaceObject, CostRangeMixin
-from pyticketswitch.api_exceptions import InvalidId
-from pyticketswitch import settings
-import core as core_objs
-import performance as perf_objs
-import availability as avail_objs
+from .base import InterfaceObject, CostRangeMixin
+from ..api_exceptions import InvalidId
+from .. import settings
+from . import core as core_objs
+from . import performance as perf_objs
+from . import availability as avail_objs
 
 
 class Category(object):
